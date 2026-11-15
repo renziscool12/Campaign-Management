@@ -38,7 +38,7 @@ class CampaignManager:
         for campaign in self.campaigns:
             if campaign.campaign_id == campaign_id:
                 self.campaigns.remove(campaign)
-                self.file_handler.update_file(self.campaigns)
+                self.file_handler.delete_file(self.campaigns)
                 return "Campaign deleted successfully."
             
         return "Campaign not found."
