@@ -15,3 +15,8 @@ class FileHandler:
         with open("campaigns.txt", 'w') as file:
             for campaign in campaigns:
                 file.write(str(campaign) + "\n")
+
+    def delete_file(self, campaigns):
+        with open("campaigns.txt", 'w') as file:
+            for campaign in campaigns:
+                file.write(str(campaign) + "\n")
